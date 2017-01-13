@@ -11,10 +11,9 @@ import UIKit
 class ZLScrollViewCell: UICollectionViewCell {
     
     private var imageView = UIImageView()
-    var url: URL? = nil {
+    var data: Data? = nil {
         didSet{
-            let data = try! Data.init(contentsOf: url!)
-            imageView.image = UIImage.init(data: data)
+            imageView.image = UIImage.init(data: data!)
         }
     }
     
@@ -22,7 +21,6 @@ class ZLScrollViewCell: UICollectionViewCell {
         super.init(frame: frame)
         imageView = UIImageView.init(frame: self.bounds)
         self.contentView.addSubview(imageView)
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
