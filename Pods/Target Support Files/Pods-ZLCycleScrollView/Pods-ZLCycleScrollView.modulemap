@@ -1,0 +1,6 @@
+framework module Pods_ZLCycleScrollView {
+  umbrella header "Pods-ZLCycleScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}
