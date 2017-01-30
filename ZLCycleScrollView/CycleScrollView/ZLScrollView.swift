@@ -42,11 +42,7 @@ class ZLScrollView: UICollectionView, UICollectionViewDataSource, UICollectionVi
         fatalError("init(coder:) has not been implemented")
     }
     
-//  MARK:- ScrollViewDelegate
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let i = NSInteger(scrollView.contentOffset.x / self.bounds.size.width) % self.dataS.count
-        self.pc.currentPage = i
-    }
+
     
 //  MARK:- CollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -66,6 +62,18 @@ class ZLScrollView: UICollectionView, UICollectionViewDataSource, UICollectionVi
     }
     
 //  MARK:- ScrollViewDelegate
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        print(scrollView.contentOffset.x)
+        
+        let i = NSInteger(scrollView.contentOffset.x / self.bounds.size.width) % self.dataS.count
+        print(i)
+        
+        
+        
+        self.pc.currentPage = i
+    }
+
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let index = scrollView.contentOffset.x / scrollView.bounds.size.width as NSNumber
         if index == 0 || index == (self.numberOfItems(inSection: 0) - 1) as NSNumber {
