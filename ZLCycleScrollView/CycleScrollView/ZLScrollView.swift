@@ -62,15 +62,10 @@ class ZLScrollView: UICollectionView, UICollectionViewDataSource, UICollectionVi
     }
     
 //  MARK:- ScrollViewDelegate
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        print(scrollView.contentOffset.x)
-        
-    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {}
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let i = NSInteger(scrollView.contentOffset.x / self.bounds.size.width) % self.dataS.count
-        print(i)
         self.pc.currentPage = i
 
         let index = scrollView.contentOffset.x / scrollView.bounds.size.width as NSNumber
