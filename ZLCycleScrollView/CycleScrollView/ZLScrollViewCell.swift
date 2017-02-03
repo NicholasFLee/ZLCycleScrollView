@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ZLScrollViewCell: UICollectionViewCell {
     
     private var imageView = UIImageView()
-    var data: Data? = nil {
+    var data: String? = nil {
         didSet{
-            imageView.image = UIImage.init(data: data!)
+            if !(data?.contains("http://"))! || (data?.contains("https://"))! {
+                imageView.image = UIImage.init(named: data!)
+            } else {
+                imageView.kf.setImage(with: URL.init(string: data!))
+            }
         }
     }
     

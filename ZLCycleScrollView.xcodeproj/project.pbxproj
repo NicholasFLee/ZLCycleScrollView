@@ -13,7 +13,6 @@
 		E15B244A1E27835F006DF908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15B24481E27835F006DF908 /* Main.storyboard */; };
 		E15B244C1E27835F006DF908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15B244B1E27835F006DF908 /* Assets.xcassets */; };
 		E15B244F1E27835F006DF908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15B244D1E27835F006DF908 /* LaunchScreen.storyboard */; };
-		E15B24651E27ABC5006DF908 /* images in Resources */ = {isa = PBXBuildFile; fileRef = E15B24641E27ABC5006DF908 /* images */; };
 		E15B24681E27B972006DF908 /* ZLScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B24671E27B972006DF908 /* ZLScrollView.swift */; };
 		E15B246A1E27BD43006DF908 /* ZLScrollViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B24691E27BD43006DF908 /* ZLScrollViewFlowLayout.swift */; };
 		E15B246C1E27BF24006DF908 /* ZLScrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B246B1E27BF24006DF908 /* ZLScrollViewCell.swift */; };
@@ -30,7 +29,6 @@
 		E15B244B1E27835F006DF908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E15B244E1E27835F006DF908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E15B24501E27835F006DF908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E15B24641E27ABC5006DF908 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		E15B24671E27B972006DF908 /* ZLScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLScrollView.swift; sourceTree = "<group>"; };
 		E15B24691E27BD43006DF908 /* ZLScrollViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLScrollViewFlowLayout.swift; sourceTree = "<group>"; };
 		E15B246B1E27BF24006DF908 /* ZLScrollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLScrollViewCell.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				E15B244B1E27835F006DF908 /* Assets.xcassets */,
 				E15B244D1E27835F006DF908 /* LaunchScreen.storyboard */,
 				E15B24501E27835F006DF908 /* Info.plist */,
-				E15B24641E27ABC5006DF908 /* images */,
 			);
 			path = ZLCycleScrollView;
 			sourceTree = "<group>";
@@ -171,7 +168,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E15B24651E27ABC5006DF908 /* images in Resources */,
 				E15B244F1E27835F006DF908 /* LaunchScreen.storyboard in Resources */,
 				E15B244C1E27835F006DF908 /* Assets.xcassets in Resources */,
 				E15B244A1E27835F006DF908 /* Main.storyboard in Resources */,

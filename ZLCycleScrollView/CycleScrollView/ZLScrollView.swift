@@ -10,11 +10,11 @@ import UIKit
 
 class ZLScrollView: UICollectionView, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    var dataS = [Data]()
+    var dataS = [String]()
     let pc = UIPageControl()
     let didSelectCallBack: (NSInteger) -> Void
     
-    init(ds: [Data], didSelect:@escaping (NSInteger) -> Void) {
+    init(ds: [String], didSelect:@escaping (NSInteger) -> Void) {
         self.didSelectCallBack = didSelect
         super.init(frame: .zero, collectionViewLayout: ZLScrollViewFlowLayout())
         self.dataS = ds
