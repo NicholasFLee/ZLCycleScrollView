@@ -14,10 +14,10 @@ class ZLScrollViewCell: UICollectionViewCell {
     private var imageView = UIImageView()
     var data: String? = nil {
         didSet{
-            if !(data?.contains("http://"))! || (data?.contains("https://"))! {
-                imageView.image = UIImage.init(named: data!)
-            } else {
+            if (data?.contains("http://"))! || (data?.contains("https://"))! {
                 imageView.kf.setImage(with: URL.init(string: data!))
+            } else {
+                imageView.image = UIImage.init(named: data!)
             }
         }
     }

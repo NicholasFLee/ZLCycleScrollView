@@ -11,6 +11,4 @@ target 'ZLCycleScrollView' do
 
     pod 'Kingfisher'
 
-    pod 'Alamofire'
-
 end
